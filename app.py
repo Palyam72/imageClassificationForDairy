@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_option_menu import *
 from image_classifier import ImageClassification
 from insights import get_insights_stream, detect_breed
 import pandas as pd
@@ -22,12 +21,8 @@ if "analyzer_image" not in st.session_state:
 
 # Sidebar menu
 with st.sidebar:
-    selected = option_menu(
-        menu_title="Main Menu",
-        options=['Image Classification', 'The Dairy Analyzer'],
-        icons=['image', 'clipboard-data'],
-        menu_icon="cast",
-        default_index=0
+    selected = st.radio(
+        "Select the mode",['Image Classification','The Dairy Analyzer']
     )
 
 # ---------------- IMAGE CLASSIFICATION ----------------
@@ -136,4 +131,5 @@ elif selected == 'The Dairy Analyzer':
                     hide_index=True,
                     use_container_width=True
                 )
+
 
