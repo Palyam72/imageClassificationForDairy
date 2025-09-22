@@ -1,7 +1,5 @@
-streamlit
-streamlit-option-menu==0.3.13
+streamlit==1.38.0
+streamlit-option-menu==0.3.6
+pillow==10.4.0
+pandas==2.2.3
 transformers
-torch
-torchvision
-pillow
-pandas
