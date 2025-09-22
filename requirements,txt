@@ -1,0 +1,10 @@
+streamlit
+streamlit-option-menu
+transformers
+torch
+torchvision
+pillow
+pandas
+accelerate
+sentencepiece
+protobuf
