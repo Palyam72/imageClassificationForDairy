@@ -5,6 +5,3 @@ torch
 torchvision
 pillow
 pandas
-accelerate
-sentencepiece
-protobuf
