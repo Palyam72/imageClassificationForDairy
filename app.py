@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
+from streamlit_option_menu import *
 from image_classifier import ImageClassification
 from insights import get_insights_stream, detect_breed
 import pandas as pd
@@ -136,3 +136,4 @@ elif selected == 'The Dairy Analyzer':
                     hide_index=True,
                     use_container_width=True
                 )
+
